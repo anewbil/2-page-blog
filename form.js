@@ -2,7 +2,7 @@ const userel=document.querySelector("#user-name")
 const titleel=document.querySelector("#blog-title")
 const contentel=document.querySelector("#content")
 const buttonel=document.querySelector("#form-button")
-
+const formel=document.querySelector("#blog-form")
 
 function handleSubmitForm(event){
     event.preventDefault()
@@ -20,12 +20,16 @@ else{
     localStorage.setItem("savedBlogs",JSON.stringify(savedBlogs))
     document.location.href="blog.html" 
 }
-}
+
+  }
+  const modeToggle = document.getElementById('mode-toggle');
+  const body = document.body;
+  
+  modeToggle.addEventListener('click', () => {
+    console.log("toggle-button")  
+      body.classList.toggle('dark-mode');
+  });
 
 
 
-
-
-
-
-buttonel.addEventListener("click",handleSubmitForm)
+formel.addEventListener("submit",handleSubmitForm)

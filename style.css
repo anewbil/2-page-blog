@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 header {
@@ -29,7 +30,7 @@ main {
     gap:1rem;
     flex-wrap: wrap;
     justify-content: center;
-
+margin-bottom:23rem;
 }
 .blog{
     padding: 1rem;
@@ -38,4 +39,17 @@ main {
     box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
     max-width: 20rem;
     min-width: 10rem;
+     
+}
+body.dark-mode main{
+    background-color: black;
+}
+body.dark-mode #blog-posts{
+    background-color: black;
+}
+.footer {
+    bottom:0;
+    width:100%;
+    padding:2rem;
+    background-color: rgb(114, 114, 231);
 }

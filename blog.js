@@ -19,3 +19,15 @@ function displayBlogPosts() {
 
 // Call the function to display blog posts when the page loads
 document.addEventListener('DOMContentLoaded', displayBlogPosts);
+const modeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+modeToggle.addEventListener('click', () => {
+  console.log("toggle-button")  
+    body.classList.toggle('dark-mode');
+});
+const backbutton=document.getElementById("back")
+backbutton.addEventListener("click",function(event){
+    event.preventDefault()
+    document.location.href="index.html"
+})
